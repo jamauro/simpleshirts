@@ -1,0 +1,11 @@
+<% @products.each do |product| %>
+<div class="row-fluid">
+    <div class="span8 center">
+    	<div id="shots"></div>
+	    <div class="product">
+	        <strong><%= product.name %></strong>
+	        <p><%= product.description %></p>
+	    </div>
+	</div>
+</div>
+<% end %>

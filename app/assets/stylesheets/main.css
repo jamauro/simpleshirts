@@ -264,7 +264,7 @@ h6 {
     .btn.btn-primary:active, .btn.btn-primary.active {
       background-color: #16a085; }
   .btn.btn-info {
-    background-color: #3498db; }
+    background-color: #3498db; border-radius: 22.5px;}
     .btn.btn-info:hover, .btn.btn-info:focus {
       background-color: #5dade2; }
     .btn.btn-info:active, .btn.btn-info.active {
@@ -302,6 +302,7 @@ h6 {
 .btn-toolbar .btn.active {
   color: white; }
 
+
 .demo-headline {
   padding: 73px 0 110px;
   text-align: center; }
@@ -326,21 +327,7 @@ h6 {
     height: 256px;
     width: 256px;
   }
-  .demo-logo small {
-    color: rgba(52, 73, 94, 0.3);
-    display: block;
-    font-size: .24444em;
-    font-weight: 700;
-    letter-spacing: -1px;
-    padding-top: 5px; }
-  .demo-logo small a {
-    color: rgba(52, 73, 94, 0.3);
-    display: block;
-    width: 200px;
-    margin: auto;
-    text-decoration: none; }
-  .demo-logo a:hover {
-    color: #f39c12; }
+
 
 .instagram { overflow:hidden; margin-bottom:7px;  }
 .instagram-placeholder { border: 12px solid #34495E; border-radius: 6px;}
@@ -349,6 +336,12 @@ h6 {
 .span4:nth-child(4) { margin-left: 0px; }
 
 .row-fluid [class*="span"].center { float: none; margin-left: auto; margin-right: auto; }
+
+button { font-family: "Lekton", sans-serif; }
+
+select { -webkit-appearance: none; height: 40px; width: 100%; background: #fff; border: 1px solid #979797; border-radius: 20px; }
+
+.row-fluid [class*="span"].alpha {margin-left: 0;}
 
 #shots { overflow:hidden; margin-bottom:7px;  }
 
@@ -2455,6 +2448,7 @@ body.vjs-full-window {
 
   .row-fluid .span4, .row-fluid .span8 {
     width: 100%;
+    margin-left: 0px;
   }
 
 

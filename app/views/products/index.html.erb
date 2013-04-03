@@ -1,8 +1,15 @@
 
+<div class="row-fluid">
+  <div class="span8 center">
+    <div class="span4">
+      <%= link_to "New Product", new_product_path, :class => "btn btn-large btn-block btn-info" %>
+    </div>
+  </div>
+</div>
 
 <% @products.each do |product| %>
   <div class="row-fluid">
-    <div class="span8">
+    <div class="span8 center">
       <h1>Products</h1>
       <div class="product">
         <strong><%= product.name %></strong>
@@ -15,8 +22,7 @@
             </span>
         </div>
       </div>
-      <br />
-      <%= link_to 'New Product', new_product_path %>
+      
     </div>
   </div>
 <% end %>

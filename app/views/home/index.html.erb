@@ -1,7 +1,7 @@
 <% @products.each do |product| %>
 <div class="row-fluid">
     <div class="span8">
-    	<div id="shots"></div>
+    	<%= image_tag product.photo.url(:big) %>
     </div>
     <div class="span4">
 	    <div class="product">

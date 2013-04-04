@@ -11,9 +11,10 @@
     </div>
   <% end %>
 
+  <%= f.file_field :photo %>
   <%= f.input :name %>
-  <%= f.input :description %>
   <%= f.input :price %>
+  <%= f.input :description %>
   <div class="actions"">
      <%= button_tag(type: 'submit', class: "btn btn-large btn-block btn-info") do %>
         Create Product

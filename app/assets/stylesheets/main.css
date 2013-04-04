@@ -341,7 +341,19 @@ button { font-family: "Lekton", sans-serif; }
 
 select { -webkit-appearance: none; height: 40px; width: 100%; background: #fff; border: 1px solid #979797; border-radius: 20px; }
 
-.row-fluid [class*="span"].alpha {margin-left: 0;}
+.row-fluid [class*="span"].alpha {margin-left: 0; }
+
+.products {margin-top: 40px;}
+
+.products .span8 { margin: 0px; }
+
+ul {
+  margin: 0px;
+}
+li{ 
+  padding: 0 0 40px 0;
+  list-style: none;
+}
 
 #shots { overflow:hidden; margin-bottom:7px;  }
 
@@ -356,8 +368,11 @@ select { -webkit-appearance: none; height: 40px; width: 100%; background: #fff; 
   padding: 0;
 }
 
-#shots ul li img {
-  width: 100%; border-radius: 6px; margin-bottom: 20px;
+img {
+  width: 100%; 
+  border-radius: 6px; 
+  margin-top: 20px;
+
 }
 
 .social { 
@@ -2446,7 +2461,7 @@ body.vjs-full-window {
     margin: 0;
   }
 
-  .row-fluid .span4, .row-fluid .span8 {
+  .row-fluid [class*="span"] {
     width: 100%;
     margin-left: 0px;
   }

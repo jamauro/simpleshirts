@@ -17,17 +17,46 @@
 </head>
 <body>
 
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+		    <ul class="nav pull-right">
+		     	<% if admin_signed_in? %>
+		     		<li><%= link_to 'Products', products_path %></li>
+		     		<li><%= link_to 'Sign Out', destroy_admin_session_path, method: :delete %></li>
+		     	<% end %>
+		    </ul>
+		</div>
+	</div>
+</div>
+
 <div class="container-fluid">
-	 <p class="notice"><%= notice %></p>
-     <p class="alert"><%= alert %></p>
-		<div class="demo-headline">
-	        <h1 class="demo-logo">
-	          <div class="logo"></div>
-	          simple shirts
-	        </h1>
-	    </div> <!-- /demo-headline -->
+	<%if flash[:notice] %>
+		<div class="alert alert-success">
+			<button class="close" data-dismiss="alert">x</button>
+			<%= flash[:notice] %>
+		</div>
+	<% end %>
+
+	<%if flash[:alert] %>
+		<div class="alert alert-error">
+			<button class="close" data-dismiss="alert">x</button>
+			<%= flash[:alert] %>
+		</div>
+	<% end %>
+
+
+
+	<div class="demo-headline">
+		<h1 class="demo-logo">
+		    <div class="logo"></div>
+		        simple shirts
+		</h1>
+	</div> <!-- /demo-headline -->
+
 	<%= yield %>
 </div>
+
 
 <footer>
     <div class="container-fluid">
@@ -42,9 +71,5 @@
     </div>
 </footer>
 
-	<script src="js/dribbble.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      getShotsForID('johnamauro', 'shots', 1);
-    </script>
 </body>
 </html>

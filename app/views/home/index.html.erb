@@ -5,7 +5,7 @@
     </div>
     <div class="span4">
 	    <div class="product">
-	        <strong><%= product.name %></strong>
+	        <h2><%= product.name %></h2>
 	        <p><%= product.description %></p>
 	        <%= simple_form_for(product) do |f| %>
 	        	<div class="span8 alpha"><%= f.input :size, collection: ["small", "medium", "large"] %></div>

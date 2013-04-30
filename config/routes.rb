@@ -8,7 +8,10 @@ Simpleshirts::Application.routes.draw do
 
   root :to => 'home#index'
   
-  resources :products
+  namespace :admin do
+    resources :products
+  end
+  
 
   resources :charges
   # The priority is based upon order of creation:

@@ -26,6 +26,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jquery-fileupload-rails'
 
 gem 'stripe'
 

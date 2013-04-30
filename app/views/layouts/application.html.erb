@@ -22,7 +22,7 @@
 		<div class="container-fluid">
 		    <ul class="nav pull-right">
 		     	<% if admin_signed_in? %>
-		     		<li><%= link_to 'Products', products_path %></li>
+		     		<li><%= link_to 'Products', admin_products_path %></li>
 		     		<li><%= link_to 'Sign Out', destroy_admin_session_path, method: :delete %></li>
 		     	<% end %>
 		    </ul>
@@ -31,17 +31,10 @@
 </div>
 
 <div class="container-fluid">
-	<%if flash[:notice] %>
-		<div class="alert alert-success">
+	<% flash.each do |type, message| %>
+		<div class="alert <%= flash_class type %>">
 			<button class="close" data-dismiss="alert">x</button>
-			<%= flash[:notice] %>
-		</div>
-	<% end %>
-
-	<%if flash[:alert] %>
-		<div class="alert alert-error">
-			<button class="close" data-dismiss="alert">x</button>
-			<%= flash[:alert] %>
+			<%= message %>
 		</div>
 	<% end %>
 

@@ -7,7 +7,7 @@
 	    <div class="product">
 	        <h2><%= product.name %></h2>
 	        <p><%= product.description %></p>
-	        <%= simple_form_for(product) do |f| %>
+	        <%= simple_form_for [:admin, product] do |f| %>
 	        	<div class="span8 alpha"><%= f.input :size, collection: ["small", "medium", "large"] %></div>
 	        	<div class="span4"><%= f.input :quantity, collection: 1..5 %></div>
 	        	<script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"

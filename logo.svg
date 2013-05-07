@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="472px" height="472px" viewBox="0 0 472 472" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>arvo logo</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs>
+        <path d="M236,472 C366.339207,472 472,366.339207 472,236 C472,105.660793 366.339207,0 236,0 C105.660793,0 0,105.660793 0,236 C0,366.339207 105.660793,472 236,472 Z M236,472" id="path-1" stroke="none"></path>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <use id="Oval 4 copy 2" xlink:href="#path-1"></use>
+            <g id="Layer_1 copy 3" transform="translate(146.000000, 146.000000)" mask="url(#mask-2)" fill="#3498DB">
+                <path d="M90,180 C40.2975,180 0,139.7025 0,90 L0,90 L0,67.5 L45,112.5 L26.47125,112.5 C34.54875,135.2025 54.405,152.2575 78.75,156.36375 L78.75,101.25 L67.5,101.25 C61.29,101.25 56.25,96.22125 56.25,90 C56.25,83.77875 61.29,78.75 67.5,78.75 L78.75,78.75 L78.75,65.43 C65.66625,60.78375 56.25,48.43125 56.25,33.75 C56.25,16.66125 68.99625,2.68875 85.46625,0.46125 C86.92875,0.1575 88.4475,0 90,0 C91.5525,0 93.07125,0.1575 94.53375,0.46125 C111.00375,2.68875 123.75,16.66125 123.75,33.75 C123.75,48.43125 114.3225,60.78375 101.25,65.43 L101.25,78.75 L112.5,78.75 C118.72125,78.75 123.75,83.77875 123.75,90 C123.75,96.22125 118.72125,101.25 112.5,101.25 L101.25,101.25 L101.25,156.36375 C125.595,152.2575 145.4625,135.19125 153.52875,112.5 L135,112.5 L180,67.5 L180,90 C180,139.7025 139.7025,180 90,180 L90,180 Z M90,22.5 C83.79,22.5 78.75,27.52875 78.75,33.75 C78.75,39.97125 83.79,45 90,45 C96.21,45 101.25,39.97125 101.25,33.75 C101.25,27.52875 96.21,22.5 90,22.5 L90,22.5 Z M90,22.5" id="Shape"></path>
+            </g>
+            <path d="M86,236 C86,153.157283 153.157283,86 236,86 C318.842717,86 386,153.157283 386,236 C386,318.842717 318.842717,386 236,386 C153.157283,386 86,318.842717 86,236 Z M86,236" id="Oval 1 copy 3" mask="url(#mask-2)"></path>
+            <text id="simpleshirts copy 3" fill="#2C3E50" font-family="Arvo" font-size="55" font-weight="normal" sketch:alignment="middle" letter-spacing="4" mask="url(#mask-2)" x="102.63501" y="373.963267">
+                <tspan>simpleshirts</tspan>
+            </text>
+            <path d="M239,420 C321.842717,420 389,352.842717 389,270 C389,187.157283 321.842717,120 239,120 C156.157283,120 89,187.157283 89,270 C89,352.842717 156.157283,420 239,420 Z M239,420" id="Oval 1 copy 4" transform="translate(239.000000, 270.000000) rotate(-180.000000) translate(-239.000000, -270.000000) " mask="url(#mask-2)"></path>
+            <text id="est. 1903 copy" fill="#475666" font-family="Arvo" font-size="55" font-weight="normal" sketch:alignment="middle" letter-spacing="4" mask="url(#mask-2)" x="199.174316" y="423.963267">
+                <tspan>est. 1903</tspan>
+            </text>
+            <path d="M236,466 C363.025499,466 466,363.025499 466,236 C466,108.974501 363.025499,6 236,6 C108.974501,6 6,108.974501 6,236 C6,363.025499 108.974501,466 236,466 Z M236,466" id="Oval 4 copy 2" stroke="#3498DB" stroke-width="12" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

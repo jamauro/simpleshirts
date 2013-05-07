@@ -17,15 +17,20 @@
 </head>
 <body>
 
-<div class="navbar">
-	<div class="navbar-inner">
-		<div class="container-fluid">
-		    <ul class="nav pull-right">
-		     	<% if admin_signed_in? %>
-		     		<li><%= link_to 'Products', admin_products_path %></li>
-		     		<li><%= link_to 'Sign Out', destroy_admin_session_path, method: :delete %></li>
-		     	<% end %>
-		    </ul>
+<div class="container-fluid">
+
+	<div class="navbar">
+		<div class="navbar-inner">
+			<a class="brand" href="http://localhost:3000">simple shirts</a>
+			   	<ul class="nav pull-right">
+			   		<li><a href="http://simpleshirts.co/blog/">Blog</a></li>
+			   		<li><a href="#">About</a></li>
+			   		<li><a href="#">Contact</a></li>
+			     	<% if admin_signed_in? %>
+			     		<li><%= link_to 'Products', admin_products_path %></li>
+			     		<li><%= link_to 'Sign Out', destroy_admin_session_path, method: :delete %></li>
+			     	<% end %>
+			    </ul>
 		</div>
 	</div>
 </div>
@@ -40,12 +45,11 @@
 
 
 
-	<div class="demo-headline">
-		<h1 class="demo-logo">
+	<div class="headline">
+		<h1 class="name">
 		    <div class="logo"></div>
-		        simple shirts
 		</h1>
-	</div> <!-- /demo-headline -->
+	</div> <!-- /headline -->
 
 	<%= yield %>
 </div>

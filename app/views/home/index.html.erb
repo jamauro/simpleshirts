@@ -1,24 +1,26 @@
 <% @products.each do |product| %>
 <div class="row-fluid">
-    <div class="span8">
-    	<%= image_tag product.photo.url(:big) %>
-    </div>
-    <div class="span4">
-	    <div class="product">
-	        <h2><%= product.name %></h2>
-	        <p><%= product.description %></p>
-	        <%= simple_form_for [:admin, product] do |f| %>
-	        	<div class="span8 alpha"><%= f.input :size, collection: ["small", "medium", "large"] %></div>
-	        	<!-- <div class="span4"><%= f.input :quantity, collection: 1..5 %></div> -->
-	        	<script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
-          			data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          			data-description="<%= product.name %>"
-          			data-amount="<%= product.price.to_i*100 %>"></script>
-	        	<!-- <%= button_tag(type: 'submit', class: "btn btn-large btn-block btn-info") do %>
-        			Buy
-      			<% end %> -->
-	        <% end %>
+	<div class="span12 center">
+	    <div class="span8">
+	    	<%= image_tag product.photo.url(:big) %>
 	    </div>
+	    <div class="span4">
+		    <div class="product">
+		        <h2><%= product.name %></h2>
+		        <div class="description"><%= product.description %></div>
+		        <%= simple_form_for [:admin, product] do |f| %>
+		        	<!-- <div class="span8 alpha"><%= f.input :size, collection: ["Men's small", "medium", "large", "Women's small", "medium", "large"], prompt: 'Size' %></div>
+		        	 <div class="span4"><%= f.input :quantity, collection: 1..5 %></div> -->
+		        	<!--  <script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
+	          			data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+	          			data-description="<%= product.name %>"
+	          			data-amount="<%= product.price.to_i*100 %>"></script> -->
+		        	<%= button_tag(type: 'submit', class: "btn btn-large btn-block btn-info") do %>
+	        			Buy for $<%= product.price %>
+	      			<% end %>
+		        <% end %>
+		    </div>
+		</div>
 	</div>
 </div>
 <% end %>

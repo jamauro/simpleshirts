@@ -178,10 +178,20 @@
 .fui-camera-24:before {
   content: "\e004"; }
 
+html { height: 100%; }
+
 body {
+  height: 100%;
   color: #6F787D;
   font: 100%/1.5 "Open Sans", sans-serif; 
   text-rendering: optimizeLegibility; }
+
+#wrap {min-height: 100%;}
+
+#main {
+  overflow: auto;
+  padding-bottom: 60px; }  /* for sticky footer */
+
 
 a {
   color: #3892E3;
@@ -239,6 +249,7 @@ h6 {
   border: none;
   background: #34495e;
   color: white;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.03125em;
   text-decoration: none;
   text-shadow: none;
@@ -346,6 +357,9 @@ h6 {
     width: 138px;
   }
 
+.description {
+  margin: 0 0 20px 0;
+}
 
 .instagram { overflow:hidden; margin-bottom:7px;  }
 .instagram-placeholder { border: 12px solid #34495E; border-radius: 6px;}
@@ -353,11 +367,19 @@ h6 {
 .instagram-image { width: 92%; padding: 4%; background: #34495E; border-radius: 6px; margin-bottom: 20px; }
 .span4:nth-child(4) { margin-left: 0px; }
 
-.row-fluid [class*="span"].center { float: none; margin-left: auto; margin-right: auto; }
+.row-fluid [class*="span"].center { float: none; margin-left: auto; margin-right: auto; padding: 0 4%; }
 
 button { font-family: "Arvo", sans-serif; }
 
-select { -webkit-appearance: none; height: 40px; width: 100%; background: #fff; border: 1px solid #979797; border-radius: 20px; }
+select { 
+  -webkit-appearance: none; 
+  height: 40px; 
+  width: 100%; 
+  background: #fff; 
+  border: 1px solid #979797; 
+  border-radius: 20px; 
+  font-family: 'Open Sans', sans-serif; 
+  padding-left: 14px; }
 
 .row-fluid [class*="span"].alpha {margin-left: 0; }
 
@@ -391,7 +413,7 @@ img {
   border-radius: 6px; 
   margin-top: 16px;
   margin-bottom: 20px;
-
+  border: 1px solid #D2D2D2;
 }
 
 .social { 
@@ -1963,11 +1985,16 @@ input.todo-search-field {
 
   .todo-search {
     background-image: "../images/todo/search-2x.png"; } }
+
+
 footer {
+  position: relative;
+  margin-top: -16px; /* negative value of footer height */
+  height: 80px;
+  clear:both;
   background-color: #eceff1;
-  color: #bdc1c5;
-  padding: 26px 0;
-  margin-top: 40px; }
+  color: #bdc1c5; 
+  padding: 26px 0; }
   footer a {
     color: #a1a4a7; }
   footer p {

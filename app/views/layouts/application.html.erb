@@ -16,42 +16,45 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="wrap">
+	<div id="main">
+		<div class="container-fluid">
 
-<div class="container-fluid">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<a class="brand" href="http://localhost:3000">simple shirts</a>
+					   	<ul class="nav pull-right">
+					   		<li><a href="http://simpleshirts.co/blog/">Blog</a></li>
+					   		<li><%= link_to "About", about_path %></li>
+					   		<li><%= link_to "Contact", contact_path %></li>
+					     	<% if admin_signed_in? %>
+					     		<li><%= link_to 'Products', admin_products_path %></li>
+					     		<li><%= link_to 'Sign Out', destroy_admin_session_path, method: :delete %></li>
+					     	<% end %>
+					    </ul>
+				</div>
+			</div>
+		</div>
 
-	<div class="navbar">
-		<div class="navbar-inner">
-			<a class="brand" href="http://localhost:3000">simple shirts</a>
-			   	<ul class="nav pull-right">
-			   		<li><a href="http://simpleshirts.co/blog/">Blog</a></li>
-			   		<li><a href="#">About</a></li>
-			   		<li><a href="#">Contact</a></li>
-			     	<% if admin_signed_in? %>
-			     		<li><%= link_to 'Products', admin_products_path %></li>
-			     		<li><%= link_to 'Sign Out', destroy_admin_session_path, method: :delete %></li>
-			     	<% end %>
-			    </ul>
+		<div class="container-fluid">
+			<% flash.each do |type, message| %>
+				<div class="alert <%= flash_class type %>">
+					<button class="close" data-dismiss="alert">x</button>
+					<%= message %>
+				</div>
+			<% end %>
+
+
+
+			<div class="headline">
+				<h1 class="name">
+				    <div class="logo"></div>
+				</h1>
+			</div> <!-- /headline -->
+
+			<%= yield %>
 		</div>
 	</div>
-</div>
-
-<div class="container-fluid">
-	<% flash.each do |type, message| %>
-		<div class="alert <%= flash_class type %>">
-			<button class="close" data-dismiss="alert">x</button>
-			<%= message %>
-		</div>
-	<% end %>
-
-
-
-	<div class="headline">
-		<h1 class="name">
-		    <div class="logo"></div>
-		</h1>
-	</div> <!-- /headline -->
-
-	<%= yield %>
 </div>
 
 
